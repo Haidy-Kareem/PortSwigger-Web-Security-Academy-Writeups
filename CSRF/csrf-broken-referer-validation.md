@@ -7,10 +7,7 @@ The email change functionality in this lab is vulnerable to CSRF. The applicatio
 **Step 1: Confirming Referer Validation Exists**  
 After logging in as `wiener`, I captured the legitimate email change request and noted the session cookie. I sent the request to Repeater and swapped the Referer header for an unrelated domain, `https://google.com`. The server responded with `400 Bad Request` and `"Invalid referer header"`, confirming that Referer validation is actually enforced.
 
-
-
-
-
+obsidian://open?vault=Web%20Pentesting&file=Backup%2FPhotos%2FPasted%20image%2020260828210349.png
 
 **Step 2: Testing a Subdomain Bypass**  
 I tested whether the check only looks for the lab domain appearing somewhere in the Referer, rather than validating it properly. I set the Referer to a URL where the lab's domain was appended as if it were a subdomain of an attacker domain — effectively `attacker.com` wrapped around the lab ID in a way that still contains the exact lab hostname. This request was accepted with a `302 Found`, showing the validation isn't checking the real origin, just whether the expected string shows up in the header.
