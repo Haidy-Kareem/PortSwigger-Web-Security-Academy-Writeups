@@ -1,3 +1,5 @@
+# Lab- SQL injection attack, querying the database type and version on Oracle
+
 ## Objective
 
 The application contains a SQL Injection vulnerability in the product category filter. The goal of this lab was to use a UNION-based SQL injection to retrieve and display the database's exact version string.
