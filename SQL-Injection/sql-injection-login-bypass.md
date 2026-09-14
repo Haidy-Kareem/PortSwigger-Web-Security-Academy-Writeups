@@ -1,4 +1,6 @@
-# Subverting Application Logic
+# Lab- SQL injection vulnerability allowing login bypass
+
+## Subverting Application Logic
 
 ## 1. Understanding the Concept
 
