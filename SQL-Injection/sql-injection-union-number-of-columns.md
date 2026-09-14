@@ -1,3 +1,5 @@
+# Lab- SQL injection UNION attack, determining the number of columns returned by the query
+
 ## Objective
 
 The application contains a SQL Injection vulnerability in the product category filter. The application returns the results of the SQL query directly in the HTTP response, which makes it possible to perform a SQL injection **UNION attack**.
