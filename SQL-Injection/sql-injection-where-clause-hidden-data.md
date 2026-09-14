@@ -1,3 +1,5 @@
+# Lab- SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+
 ## Objective
 
 The application contains a SQL Injection vulnerability in the product category filter.
